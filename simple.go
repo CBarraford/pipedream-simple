@@ -27,7 +27,7 @@ func root(w http.ResponseWriter, r *http.Request) {
 }
 
 func another(w http.ResponseWriter, r *http.Request) {
-	log.Print("newBranch2")
+	log.Print("newBranch3")
 	fmt.Fprintf(w, "newBranch")
 }
 
