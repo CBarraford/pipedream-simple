@@ -2,9 +2,9 @@ FROM golang
 
 COPY simple.go /simple.go
 
-# add pipeview script
-COPY pipeview.bash /pipeview.bash
+# add pipedream script
+COPY pipedream.bash /pipedream.bash
 
 EXPOSE 8888
 
-ENTRYPOINT ["/pipeview.bash"]
+ENTRYPOINT ["/pipedream.bash"]
