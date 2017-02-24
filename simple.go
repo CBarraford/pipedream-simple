@@ -22,13 +22,15 @@ func getDescriptivePerson() string {
 
 func root(w http.ResponseWriter, r *http.Request) {
 	txt := getDescriptivePerson()
+	log.Print("My New Feature is bigly.")
 	log.Print(txt)
+	fmt.Fprintf(w, "My New Feature is bigly.")
 	fmt.Fprintf(w, txt)
 }
 
 func another(w http.ResponseWriter, r *http.Request) {
-	log.Print("newBranch6")
-	fmt.Fprintf(w, "newBranch")
+	log.Print("another page")
+	fmt.Fprintf(w, "another page")
 }
 
 func main() {
