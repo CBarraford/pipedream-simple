@@ -17,7 +17,7 @@ var people = []string{"Obama", "Trump", "Lincoln", "Winfrey", "Presley", "Monroe
 func getDescriptivePerson() string {
 	adj := r.Intn(len(adjectives))
 	person := r.Intn(len(people))
-	return fmt.Sprintf("%s %s", adjectives[adj], people[person])
+	return fmt.Sprintf("%s %s!!", adjectives[adj], people[person])
 }
 
 func root(w http.ResponseWriter, r *http.Request) {
